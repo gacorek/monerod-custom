@@ -37,10 +37,10 @@ jobs:
           echo "DIGEST_NAME=amd64" >> $GITHUB_ENV
       -
         name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3.10.0
+        uses: docker/setup-buildx-action@v3.11.1
       -
         name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       -
         name: Test build of image
         id: build
